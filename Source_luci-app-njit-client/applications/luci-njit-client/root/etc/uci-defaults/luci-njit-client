@@ -1,0 +1,11 @@
+#!/bin/sh
+
+uci -q batch <<-EOF >/dev/null
+	delete ucitrack.@njit-client[-1]
+	add ucitrack njit-client
+	set ucitrack.@njit-client[-1].init=njit-client
+	commit ucitrack
+EOF
+
+rm -f /tmp/luci-indexcache
+exit 0
