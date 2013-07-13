@@ -1,9 +1,0 @@
-#!/bin/sh 
-
-[ -n "${IPKG_INSTROOT}" ] || {
-	( . /etc/uci-defaults/luci-njit-client ) && rm -f /etc/uci-defaults/luci-njit-client
-	chmod 755 /etc/init.d/njit-client >/dev/null 2>&1
-   /etc/init.d/njit-client enable >/dev/null 2>&1
-
-	exit 0
-}

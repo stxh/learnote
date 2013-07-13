@@ -1,3 +1,0 @@
-#!/bin/sh
-killall udhcpc
-udhcpc -t 0 -i eth0.2 -b -p /var/run/dhcp-eth0.2.pid

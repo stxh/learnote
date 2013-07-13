@@ -1,7 +1,0 @@
-创建个bash脚本，内容
-#!/bin/sh
-killall udhcpc
-udhcpc -t 0 -i br-wan -b -p /var/run/dhcp-br-wan.pid
-保存重命名为njit-RefreshIP，复制到/bin目录下，加上可执行权限，这样每次njit-client调用njit-RefreshIP时路由就会自动刷新IP，保持在线状态
-
-PS:红色部分是具体你需要拨号的网卡，如ethX.X等等，不同路由定义似乎不尽相同，自己看着找吧，我的是br-wan(虚拟)实际是eth0.2
