@@ -1,5 +1,0 @@
-config 'njit'
-	option 'Nic' 'eth0.2'
-	option 'Username' 'ferstar'
-	option 'Password' '123456'
-

@@ -1,3 +1,0 @@
-#!/bin/sh
-killall udhcpc
-udhcpc -t 0 -i $(uci get njit.@njit[0].Nic) -b -p /var/run/dhcp-$(uci get njit.@njit[0].Nic).pid
