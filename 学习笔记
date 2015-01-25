@@ -1,2 +1,13 @@
 #删除当前所有.svn目录
 find . -name ".svn" -type d | xargs rm -rf
+
+
+
+1.  source /opt/ros/indigo/setup.bash
+
+在每次打开终端时你都需要先运行上面这条命令后才能运行ros相关的命令，为了避免这一繁琐过程，你可以事先在.bashrc文件（初学者请注意：该文件是在当前系统用户的home目录下。）中添加这条命令，这样当你每次登录后系统已经帮你执行这些命令配置好环境。这样做也可以方便你在同一台计算机上安装并随时切换到不同版本的ROS（比如fuerte和groovy）。
+
+此外，你也可以在其它系统平台上相应的ROS安装目录下找到这些setup.*sh文件。 
+
+安装kobuki Turtlebot package用http://wiki.ros.org/turtlebot/Tutorials/indigo/Installation
+ROS上的kobuki资料http://wiki.ros.org/Robots/TurtleBot
