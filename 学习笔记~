@@ -1,0 +1,2 @@
+#删除当前所有.svn目录
+find . -name ".svn" -type d | xargs rm -rf
